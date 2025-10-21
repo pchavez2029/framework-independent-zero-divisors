@@ -28,8 +28,8 @@ Framework-independent zero divisor patterns that maintain exact structure throug
 
 ## Files
 
-- `paper.pdf` - Complete research paper (14 pages)
-- `paper.tex` - LaTeX source
+- `Hyperwormholes_Paper.pdf` - Complete research paper (14 pages)
+- `main.tex` - LaTeX source
 
 ## Citation
 ```bibtex
