@@ -28,23 +28,51 @@ Framework-independent zero divisor patterns that maintain exact structure throug
 
 ## Files
 
-- `Hyperwormholes_Paper.pdf` - Complete research paper (14 pages)
+- `Hyperwormholes_Paper.pdf` - Complete research paper v1.0 (14 pages)
+- `canonical_six_v1.1.pdf` - Updated version v1.1 with AI acknowledgements
 - `main.tex` - LaTeX source
 
+## Version History
+
+**Version 1.1** (November 2025) - DOI: [10.5281/zenodo.17574868](https://doi.org/10.5281/zenodo.17574868)
+- Added acknowledgements for AI assistance (Claude Code, Gemini Advanced, ChatGPT)
+- Updated with transparent research methodology disclosure
+- Available at: https://zenodo.org/records/17574868
+
+**Version 1.0** (October 2025) - DOI: [10.5281/zenodo.17402496](https://doi.org/10.5281/zenodo.17402496)
+- Original publication
+- Available at: https://zenodo.org/records/17402496
+
 ## Citation
+
+**Cite the latest version (v1.1 with AI acknowledgements):**
 ```bibtex
 @article{chavez2025canonical,
   title={Framework-Independent Zero Divisor Patterns in Higher-Dimensional Cayley-Dickson Algebras: Discovery and Verification of The Canonical Six},
   author={Chavez, Paul},
   year={2025},
+  doi={10.5281/zenodo.17574868},
+  url={https://zenodo.org/records/17574868},
+  note={Version 1.1 with AI assistance acknowledgements}
+}
+```
+
+**Original version (v1.0):**
+```bibtex
+@article{chavez2025canonical_v1,
+  title={Framework-Independent Zero Divisor Patterns in Higher-Dimensional Cayley-Dickson Algebras: Discovery and Verification of The Canonical Six},
+  author={Chavez, Paul},
+  year={2025},
   doi={10.5281/zenodo.17402496},
-  url={https://zenodo.org/records/17402496}
+  url={https://zenodo.org/records/17402496},
+  note={Version 1.0}
 }
 ```
 
 ## Publication Status
 
-Published on Zenodo: https://zenodo.org/records/17402496  
+**Latest version (v1.1):** https://zenodo.org/records/17574868
+**Original version (v1.0):** https://zenodo.org/records/17402496
 arXiv submission pending endorsement
 
 ## Contact
