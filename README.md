@@ -35,7 +35,7 @@ Framework-independent zero divisor patterns that maintain exact structure throug
 ## Version History
 
 **Version 1.1** (November 2025) - DOI: [10.5281/zenodo.17574868](https://doi.org/10.5281/zenodo.17574868)
-- Added acknowledgements for AI assistance (Claude Code, Gemini Advanced, ChatGPT)
+- Added acknowledgements for AI assistance (Claude Code, Gemini)
 - Updated with transparent research methodology disclosure
 - Available at: https://zenodo.org/records/17574868
 
