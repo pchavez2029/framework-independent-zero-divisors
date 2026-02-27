@@ -97,7 +97,7 @@ All Lean 4 files are included flat in the Zenodo repository.
 **Open Stubs (pending Mathlib library development — not refutations):**
 - ○ G₂ Lie-theoretic invariance — requires G₂ representation theory in Mathlib
 - ○ E₆×A₂ confinement — requires graded Lie algebra theory in Mathlib
-- ○ Viazovska sphere-packing connection — requires modular form theory in Mathlib (potential collaboration: Seewoo Lee)
+- ○ Viazovska sphere-packing connection — requires modular form theory in Mathlib
 
 ---
 
