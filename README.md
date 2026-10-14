@@ -17,6 +17,8 @@ Framework-independent zero divisor patterns in higher-dimensional Cayley-Dickson
 
 **Latest Version:** v1.3 (February 2026) - [Direct link](https://zenodo.org/records/18793480)
 
+**⚠ Corrections register:** errors found in this paper and its documentation are recorded in [`CORRECTIONS_CANONICALSIX.md`](https://github.com/ChavezAILabs/CAIL-rh-investigation/blob/main/CORRECTIONS_CANONICALSIX.md). Read it before citing any claim below.
+
 ## Abstract
 
 We report the discovery of 12 zero divisor patterns in 16-dimensional sedenion space exhibiting dimensional persistence and framework-dependent behavior, with six patterns demonstrating framework independence across both Cayley-Dickson and Clifford algebraic constructions. Computational verification across five Cayley-Dickson dimensions (16D through 256D) and two Clifford algebra dimensions (16D and 32D) demonstrates exact preservation of zero divisor properties through successive dimensional doublings, achieving machine precision (≈ 10⁻¹⁵) in all successful tests.
@@ -28,7 +30,7 @@ The patterns divide equally: six universal structures (The Canonical Six) mainta
 ## Key Findings
 
 - **12 patterns** with dimensional persistence (16D → 256D)
-- **6 universal patterns** (The Canonical Six) work identically in both Cayley-Dickson and Clifford algebras
+- **6 universal patterns** (The Canonical Six) satisfy P·Q = 0 in both Cayley-Dickson and Clifford algebras (bilateral in Cayley-Dickson; in Clifford, Q·P = 0 also holds only for pattern 59 — see [register C-001](https://github.com/ChavezAILabs/CAIL-rh-investigation/blob/main/CORRECTIONS_CANONICALSIX.md))
 - **50/50 split** between framework-independent and construction-dependent patterns
 - **3.6% universality ratio** - only 6 of 168 sedenion zero divisors show framework independence
 - **Machine precision** verification (≈ 10⁻¹⁵) across 7 dimensions
@@ -42,17 +44,19 @@ The patterns divide equally: six universal structures (The Canonical Six) mainta
 
 Framework-independent zero divisor patterns that maintain exact structure through:
 
-| Pattern | Formula | Frameworks |
+| Pattern | Formula | Frameworks (P·Q = 0) |
 |---------|---------|------------|
-| 18 | (e₁ + e₁₄) × (e₃ + e₁₂) = 0 | CD ✓ Clifford ✓ |
-| 59 | (e₃ + e₁₂) × (e₅ + e₁₀) = 0 | CD ✓ Clifford ✓ |
-| 84 | (e₄ + e₁₁) × (e₆ + e₉) = 0 | CD ✓ Clifford ✓ |
-| 102 | (e₁ − e₁₄) × (e₃ − e₁₂) = 0 | CD ✓ Clifford ✓ |
-| 104 | (e₁ − e₁₄) × (e₅ + e₁₀) = 0 | CD ✓ Clifford ✓ |
-| 124 | (e₂ − e₁₃) × (e₆ + e₉) = 0 | CD ✓ Clifford ✓ |
+| 18 | (e₁ + e₁₄) × (e₃ + e₁₂) = 0 | CD ✓ (bilateral) · Clifford ✓ (P·Q only) |
+| 59 | (e₃ + e₁₂) × (e₅ + e₁₀) = 0 | CD ✓ (bilateral) · Clifford ✓ (bilateral) |
+| 84 | (e₄ + e₁₁) × (e₆ + e₉) = 0 | CD ✓ (bilateral) · Clifford ✓ (P·Q only) |
+| 102 | (e₁ − e₁₄) × (e₃ − e₁₂) = 0 | CD ✓ (bilateral) · Clifford ✓ (P·Q only) |
+| 104 | (e₁ − e₁₄) × (e₅ + e₁₀) = 0 | CD ✓ (bilateral) · Clifford ✓ (P·Q only) |
+| 124 | (e₂ − e₁₃) × (e₆ + e₉) = 0 | CD ✓ (bilateral) · Clifford ✓ (P·Q only) |
+
+In Clifford algebras the zero divisor property is one-directional (P·Q = 0, the paper's definition, §2.2); only pattern 59 also satisfies Q·P = 0 there. In Cayley-Dickson all six are bilateral. See [register C-001](https://github.com/ChavezAILabs/CAIL-rh-investigation/blob/main/CORRECTIONS_CANONICALSIX.md).
 
 These patterns persist through:
-- Both associative (Clifford) and non-associative (Cayley-Dickson) frameworks
+- Both associative (Clifford) and non-associative (Cayley-Dickson) frameworks (P·Q = 0; one-directional in Clifford except pattern 59)
 - Five dimensional doublings: 16D → 32D → 64D → 128D → 256D
 - 256-fold complexity increase with perfect structural preservation
 
@@ -67,7 +71,7 @@ These patterns persist through:
 - Single Weyl orbit unification (dominant weight ω₁)
 - Canonical Six as minimal generating set for the 24-element bilateral zero divisor family
 - Exactly 72 candidate pairs enumerated
-- Framework independence (Clifford vs. Cayley-Dickson) mathematically verified
+- Framework independence: P·Q = 0 in Cl(4,0) for all six patterns (one direction; Q·P = 0 only for pattern 59), in `dc08bbac-primary.lean` (v1.2 file)
 - Dimensional persistence through CD6 (256D)
 
 **Lean 4 formal proofs co-authored by Aristotle (Harmonic Math)** — https://harmonic.fun/
